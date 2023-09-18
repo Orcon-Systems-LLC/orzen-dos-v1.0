@@ -1,0 +1,259 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_udivdi3.o)
+                              /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/stdio.obj (__udivdi3)
+/usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_umoddi3.o)
+                              /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/stdio.obj (__umoddi3)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/asm/entry.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/asm/x86.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/ctype.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/disk.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/fat.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/main.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/memory.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/stdio.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/string.obj
+LOAD /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a
+                0x0000000000000500                phys = 0x500
+                0x0000000000000500                . = phys
+
+.entry          0x0000000000000500       0xc0
+                0x0000000000000500                __entry_start = .
+ *(.entry)
+ .entry         0x0000000000000500       0xc0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/asm/entry.obj
+                0x0000000000000500                entry
+
+.text           0x00000000000005c0     0x1a7b
+                0x00000000000005c0                __text_start = .
+ *(.text)
+ .text          0x00000000000005c0      0x1a5 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/asm/x86.obj
+                0x00000000000005c0                x86_outb
+                0x00000000000005cb                x86_inb
+                0x00000000000005d4                x86_Disk_GetDriveParams
+                0x0000000000000697                x86_Disk_Reset
+                0x00000000000006e7                x86_Disk_Read
+ .text          0x0000000000000765       0x53 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/ctype.obj
+                0x0000000000000765                islower
+                0x000000000000078e                toupper
+ .text          0x00000000000007b8      0x17f /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/disk.obj
+                0x00000000000007b8                DISK_Initialize
+                0x000000000000081e                DISK_LBA2CHS
+                0x00000000000008a5                DISK_ReadSectors
+ .text          0x0000000000000937      0x9f9 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/fat.obj
+                0x0000000000000937                FAT_ReadBootSector
+                0x0000000000000954                FAT_ReadFat
+                0x0000000000000988                FAT_Initialize
+                0x0000000000000baf                FAT_ClusterToLba
+                0x0000000000000bcf                FAT_OpenEntry
+                0x0000000000000d9a                FAT_NextCluster
+                0x0000000000000de7                FAT_Read
+                0x000000000000103c                FAT_ReadEntry
+                0x000000000000105d                FAT_Close
+                0x00000000000010af                FAT_FindFile
+                0x00000000000011ec                FAT_Open
+ .text          0x0000000000001330       0xf1 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/main.obj
+                0x0000000000001330                start
+ .text          0x0000000000001421       0xec /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/memory.obj
+                0x0000000000001421                memcpy
+                0x0000000000001470                memset
+                0x00000000000014b1                memcmp
+ .text          0x000000000000150d      0x858 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/stdio.obj
+                0x000000000000150d                putchr
+                0x000000000000153b                putcolor
+                0x000000000000156a                getchr
+                0x000000000000158b                getcolor
+                0x00000000000015ad                setcursor
+                0x000000000000161e                clrscr
+                0x00000000000016a7                scrollback
+                0x000000000000178e                putc
+                0x0000000000001897                puts
+                0x00000000000018c3                printf_unsigned
+                0x0000000000001968                printf_signed
+                0x00000000000019c5                printf
+                0x0000000000001cd2                print_buffer
+ .text          0x0000000000001d65       0xac /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/string.obj
+                0x0000000000001d65                strchr
+                0x0000000000001da0                strcpy
+                0x0000000000001dee                strlen
+ *fill*         0x0000000000001e11        0x3 
+ .text          0x0000000000001e14      0x10b /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_udivdi3.o)
+                0x0000000000001e14                __udivdi3
+ *fill*         0x0000000000001f1f        0x1 
+ .text          0x0000000000001f20      0x11b /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_umoddi3.o)
+                0x0000000000001f20                __umoddi3
+
+.data           0x000000000000203c        0xc
+                0x000000000000203c                __data_start = .
+ *(.data)
+ .data          0x000000000000203c        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/ctype.obj
+ .data          0x000000000000203c        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/disk.obj
+ .data          0x000000000000203c        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/fat.obj
+ .data          0x000000000000203c        0x8 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/main.obj
+                0x000000000000203c                KernelLoadBuffer
+                0x0000000000002040                Kernel
+ .data          0x0000000000002044        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/memory.obj
+ .data          0x0000000000002044        0x4 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/stdio.obj
+                0x0000000000002044                g_ScreenBuffer
+ .data          0x0000000000002048        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/string.obj
+ .data          0x0000000000002048        0x0 /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .data          0x0000000000002048        0x0 /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_umoddi3.o)
+
+.rodata         0x0000000000002048      0x206
+                0x0000000000002048                __rodata_start = .
+ *(.rodata)
+ .rodata        0x0000000000002048      0x11b /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/fat.obj
+ .rodata        0x0000000000002163       0x2f /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/main.obj
+ *fill*         0x0000000000002192        0x2 
+ .rodata        0x0000000000002194       0xba /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/stdio.obj
+                0x0000000000002194                SCREEN_WIDTH
+                0x0000000000002198                SCREEN_HEIGHT
+                0x000000000000219c                DEFAULT_COLOR
+                0x00000000000021a0                g_HexChars
+
+.eh_frame       0x0000000000002250       0xd8
+ .eh_frame      0x0000000000002250       0x64 /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .eh_frame      0x00000000000022b4       0x74 /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_umoddi3.o)
+
+.bss            0x0000000000002328       0x14
+                0x0000000000002328                __bss_start = .
+ *(.bss)
+ .bss           0x0000000000002328        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/ctype.obj
+ .bss           0x0000000000002328        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/disk.obj
+ .bss           0x0000000000002328        0xc /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/fat.obj
+ .bss           0x0000000000002334        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/main.obj
+ .bss           0x0000000000002334        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/memory.obj
+ .bss           0x0000000000002334        0x8 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/stdio.obj
+                0x0000000000002334                g_ScreenX
+                0x0000000000002338                g_ScreenY
+ .bss           0x000000000000233c        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/string.obj
+ .bss           0x000000000000233c        0x0 /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .bss           0x000000000000233c        0x0 /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_umoddi3.o)
+                0x000000000000233c                __end = .
+OUTPUT(/mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2.bin binary)
+
+.debug_info     0x0000000000000000     0x1ec9
+ .debug_info    0x0000000000000000       0xcb /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/ctype.obj
+ .debug_info    0x00000000000000cb      0x2b1 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/disk.obj
+ .debug_info    0x000000000000037c      0x9a9 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/fat.obj
+ .debug_info    0x0000000000000d25      0x2bf /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/main.obj
+ .debug_info    0x0000000000000fe4      0x1e8 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/memory.obj
+ .debug_info    0x00000000000011cc      0x54c /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/stdio.obj
+ .debug_info    0x0000000000001718      0x132 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/string.obj
+ .debug_info    0x000000000000184a      0x336 /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .debug_info    0x0000000000001b80      0x349 /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_umoddi3.o)
+
+.debug_abbrev   0x0000000000000000      0xba0
+ .debug_abbrev  0x0000000000000000       0x77 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/ctype.obj
+ .debug_abbrev  0x0000000000000077      0x140 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/disk.obj
+ .debug_abbrev  0x00000000000001b7      0x24d /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/fat.obj
+ .debug_abbrev  0x0000000000000404      0x14c /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/main.obj
+ .debug_abbrev  0x0000000000000550       0xe2 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/memory.obj
+ .debug_abbrev  0x0000000000000632      0x1f6 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/stdio.obj
+ .debug_abbrev  0x0000000000000828       0xa8 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/string.obj
+ .debug_abbrev  0x00000000000008d0      0x15e /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .debug_abbrev  0x0000000000000a2e      0x172 /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_umoddi3.o)
+
+.debug_aranges  0x0000000000000000      0x120
+ .debug_aranges
+                0x0000000000000000       0x20 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/ctype.obj
+ .debug_aranges
+                0x0000000000000020       0x20 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/disk.obj
+ .debug_aranges
+                0x0000000000000040       0x20 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/fat.obj
+ .debug_aranges
+                0x0000000000000060       0x20 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/main.obj
+ .debug_aranges
+                0x0000000000000080       0x20 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/memory.obj
+ .debug_aranges
+                0x00000000000000a0       0x20 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/stdio.obj
+ .debug_aranges
+                0x00000000000000c0       0x20 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/string.obj
+ .debug_aranges
+                0x00000000000000e0       0x20 /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .debug_aranges
+                0x0000000000000100       0x20 /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_umoddi3.o)
+
+.debug_line     0x0000000000000000      0xf6d
+ .debug_line    0x0000000000000000       0x88 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/ctype.obj
+ .debug_line    0x0000000000000088       0xee /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/disk.obj
+ .debug_line    0x0000000000000176      0x4d7 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/fat.obj
+ .debug_line    0x000000000000064d       0xab /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/main.obj
+ .debug_line    0x00000000000006f8       0xe8 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/memory.obj
+ .debug_line    0x00000000000007e0      0x3c0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/stdio.obj
+ .debug_line    0x0000000000000ba0       0x97 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/string.obj
+ .debug_line    0x0000000000000c37      0x172 /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .debug_line    0x0000000000000da9      0x1c4 /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_umoddi3.o)
+
+.debug_str      0x0000000000000000     0x1252
+ .debug_str     0x0000000000000000       0xe1 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/ctype.obj
+ .debug_str     0x00000000000000e1      0x1bc /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/disk.obj
+ .debug_str     0x000000000000029d      0x5df /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/fat.obj
+ .debug_str     0x000000000000087c      0x1d9 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/main.obj
+ .debug_str     0x0000000000000a55      0x11c /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/memory.obj
+ .debug_str     0x0000000000000b71      0x245 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/stdio.obj
+ .debug_str     0x0000000000000db6       0xe8 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/string.obj
+ .debug_str     0x0000000000000e9e      0x1da /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .debug_str     0x0000000000001078      0x1da /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_umoddi3.o)
+
+.debug_line_str
+                0x0000000000000000      0x7ca
+ .debug_line_str
+                0x0000000000000000       0xb0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/ctype.obj
+ .debug_line_str
+                0x00000000000000b0       0xfd /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/disk.obj
+ .debug_line_str
+                0x00000000000001ad      0x11c /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/fat.obj
+ .debug_line_str
+                0x00000000000002c9      0x10e /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/main.obj
+ .debug_line_str
+                0x00000000000003d7       0xf6 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/memory.obj
+ .debug_line_str
+                0x00000000000004cd      0x102 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/stdio.obj
+ .debug_line_str
+                0x00000000000005cf       0xb3 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/string.obj
+ .debug_line_str
+                0x0000000000000682       0xa4 /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .debug_line_str
+                0x0000000000000726       0xa4 /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_umoddi3.o)
+
+.comment        0x0000000000000000       0xab
+ .comment       0x0000000000000000       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/ctype.obj
+ .comment       0x0000000000000013       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/disk.obj
+ .comment       0x0000000000000026       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/fat.obj
+ .comment       0x0000000000000039       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/main.obj
+ .comment       0x000000000000004c       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/memory.obj
+ .comment       0x000000000000005f       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/stdio.obj
+ .comment       0x0000000000000072       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/string.obj
+ .comment       0x0000000000000085       0x13 /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .comment       0x0000000000000098       0x13 /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_umoddi3.o)
+
+.debug_frame    0x0000000000000000      0x52c
+ .debug_frame   0x0000000000000000       0x54 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/ctype.obj
+ .debug_frame   0x0000000000000054       0x80 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/disk.obj
+ .debug_frame   0x00000000000000d4      0x18c /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/fat.obj
+ .debug_frame   0x0000000000000260       0x2c /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/main.obj
+ .debug_frame   0x000000000000028c       0x74 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/memory.obj
+ .debug_frame   0x0000000000000300      0x1b8 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/stdio.obj
+ .debug_frame   0x00000000000004b8       0x74 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/stage2/c/string.obj
+
+.debug_loclists
+                0x0000000000000000      0xa11
+ .debug_loclists
+                0x0000000000000000      0x556 /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .debug_loclists
+                0x0000000000000556      0x4bb /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_umoddi3.o)
+
+.debug_rnglists
+                0x0000000000000000       0x51
+ .debug_rnglists
+                0x0000000000000000       0x27 /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .debug_rnglists
+                0x0000000000000027       0x2a /usr/local/i386elfgcc/lib/gcc/i386-elf/12.2.0/libgcc.a(_umoddi3.o)

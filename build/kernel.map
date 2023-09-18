@@ -1,0 +1,722 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_udivdi3.o)
+                              /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/stdio.obj (__udivdi3)
+/usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_umoddi3.o)
+                              /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/stdio.obj (__umoddi3)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/asm/arch/i686/gdt.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/asm/arch/i686/idt.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/asm/arch/i686/io.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/asm/arch/i686/isr.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/debug.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/main.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/memory.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/stdio.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/string.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/sys.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/hal.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/vfs.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/e9.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/gdt.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/i8259.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/idt.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/io.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/irq.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isr.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isrs_gen.obj
+LOAD /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/vga_text.obj
+LOAD /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a
+                0x0000000000100000                phys = 0x100000
+                0x0000000000100000                . = phys
+
+.entry          0x0000000000100000       0xc6
+                0x0000000000100000                __entry_start = .
+ *(.entry)
+ .entry         0x0000000000100000       0xc6 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/main.obj
+                0x0000000000100000                start
+
+.text           0x00000000001000d0     0x42a6
+                0x00000000001000d0                __text_start = .
+ *(.text)
+ .text          0x00000000001000d0       0x25 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/asm/arch/i686/gdt.obj
+                0x00000000001000d0                i686_GDT_Load
+ *fill*         0x00000000001000f5        0xb 
+ .text          0x0000000000100100        0xd /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/asm/arch/i686/idt.obj
+                0x0000000000100100                i686_IDT_Load
+ *fill*         0x000000000010010d        0x3 
+ .text          0x0000000000100110       0x1d /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/asm/arch/i686/io.obj
+                0x0000000000100110                i686_outb
+                0x000000000010011b                i686_inb
+                0x0000000000100124                i686_Panic
+                0x0000000000100126                i686_EnableInterrupts
+                0x0000000000100128                i686_DisableInterrupts
+                0x000000000010012a                crash_me
+ *fill*         0x000000000010012d        0x3 
+ .text          0x0000000000100130      0xa6d /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/asm/arch/i686/isr.obj
+                0x0000000000100130                i686_ISR0
+                0x0000000000100139                i686_ISR1
+                0x0000000000100142                i686_ISR2
+                0x000000000010014b                i686_ISR3
+                0x0000000000100154                i686_ISR4
+                0x000000000010015d                i686_ISR5
+                0x0000000000100166                i686_ISR6
+                0x000000000010016f                i686_ISR7
+                0x0000000000100178                i686_ISR8
+                0x000000000010017f                i686_ISR9
+                0x0000000000100188                i686_ISR10
+                0x000000000010018f                i686_ISR11
+                0x0000000000100196                i686_ISR12
+                0x000000000010019d                i686_ISR13
+                0x00000000001001a4                i686_ISR14
+                0x00000000001001ab                i686_ISR15
+                0x00000000001001b4                i686_ISR16
+                0x00000000001001bd                i686_ISR17
+                0x00000000001001c4                i686_ISR18
+                0x00000000001001cd                i686_ISR19
+                0x00000000001001d6                i686_ISR20
+                0x00000000001001df                i686_ISR21
+                0x00000000001001e6                i686_ISR22
+                0x00000000001001ef                i686_ISR23
+                0x00000000001001f8                i686_ISR24
+                0x0000000000100201                i686_ISR25
+                0x000000000010020a                i686_ISR26
+                0x0000000000100213                i686_ISR27
+                0x000000000010021c                i686_ISR28
+                0x0000000000100225                i686_ISR29
+                0x000000000010022e                i686_ISR30
+                0x0000000000100237                i686_ISR31
+                0x0000000000100240                i686_ISR32
+                0x0000000000100249                i686_ISR33
+                0x0000000000100252                i686_ISR34
+                0x000000000010025b                i686_ISR35
+                0x0000000000100264                i686_ISR36
+                0x000000000010026d                i686_ISR37
+                0x0000000000100276                i686_ISR38
+                0x000000000010027f                i686_ISR39
+                0x0000000000100288                i686_ISR40
+                0x0000000000100291                i686_ISR41
+                0x000000000010029a                i686_ISR42
+                0x00000000001002a3                i686_ISR43
+                0x00000000001002ac                i686_ISR44
+                0x00000000001002b5                i686_ISR45
+                0x00000000001002be                i686_ISR46
+                0x00000000001002c7                i686_ISR47
+                0x00000000001002d0                i686_ISR48
+                0x00000000001002d9                i686_ISR49
+                0x00000000001002e2                i686_ISR50
+                0x00000000001002eb                i686_ISR51
+                0x00000000001002f4                i686_ISR52
+                0x00000000001002fd                i686_ISR53
+                0x0000000000100306                i686_ISR54
+                0x000000000010030f                i686_ISR55
+                0x0000000000100318                i686_ISR56
+                0x0000000000100321                i686_ISR57
+                0x000000000010032a                i686_ISR58
+                0x0000000000100333                i686_ISR59
+                0x000000000010033c                i686_ISR60
+                0x0000000000100345                i686_ISR61
+                0x000000000010034e                i686_ISR62
+                0x0000000000100357                i686_ISR63
+                0x0000000000100360                i686_ISR64
+                0x0000000000100369                i686_ISR65
+                0x0000000000100372                i686_ISR66
+                0x000000000010037b                i686_ISR67
+                0x0000000000100384                i686_ISR68
+                0x000000000010038d                i686_ISR69
+                0x0000000000100396                i686_ISR70
+                0x000000000010039f                i686_ISR71
+                0x00000000001003a8                i686_ISR72
+                0x00000000001003b1                i686_ISR73
+                0x00000000001003ba                i686_ISR74
+                0x00000000001003c3                i686_ISR75
+                0x00000000001003cc                i686_ISR76
+                0x00000000001003d5                i686_ISR77
+                0x00000000001003de                i686_ISR78
+                0x00000000001003e7                i686_ISR79
+                0x00000000001003f0                i686_ISR80
+                0x00000000001003f9                i686_ISR81
+                0x0000000000100402                i686_ISR82
+                0x000000000010040b                i686_ISR83
+                0x0000000000100414                i686_ISR84
+                0x000000000010041d                i686_ISR85
+                0x0000000000100426                i686_ISR86
+                0x000000000010042f                i686_ISR87
+                0x0000000000100438                i686_ISR88
+                0x0000000000100441                i686_ISR89
+                0x000000000010044a                i686_ISR90
+                0x0000000000100453                i686_ISR91
+                0x000000000010045c                i686_ISR92
+                0x0000000000100465                i686_ISR93
+                0x000000000010046e                i686_ISR94
+                0x0000000000100477                i686_ISR95
+                0x0000000000100480                i686_ISR96
+                0x0000000000100489                i686_ISR97
+                0x0000000000100492                i686_ISR98
+                0x000000000010049b                i686_ISR99
+                0x00000000001004a4                i686_ISR100
+                0x00000000001004ad                i686_ISR101
+                0x00000000001004b6                i686_ISR102
+                0x00000000001004bf                i686_ISR103
+                0x00000000001004c8                i686_ISR104
+                0x00000000001004d1                i686_ISR105
+                0x00000000001004da                i686_ISR106
+                0x00000000001004e3                i686_ISR107
+                0x00000000001004ec                i686_ISR108
+                0x00000000001004f5                i686_ISR109
+                0x00000000001004fe                i686_ISR110
+                0x0000000000100507                i686_ISR111
+                0x0000000000100510                i686_ISR112
+                0x0000000000100519                i686_ISR113
+                0x0000000000100522                i686_ISR114
+                0x000000000010052b                i686_ISR115
+                0x0000000000100534                i686_ISR116
+                0x000000000010053d                i686_ISR117
+                0x0000000000100546                i686_ISR118
+                0x000000000010054f                i686_ISR119
+                0x0000000000100558                i686_ISR120
+                0x0000000000100561                i686_ISR121
+                0x000000000010056a                i686_ISR122
+                0x0000000000100573                i686_ISR123
+                0x000000000010057c                i686_ISR124
+                0x0000000000100585                i686_ISR125
+                0x000000000010058e                i686_ISR126
+                0x0000000000100597                i686_ISR127
+                0x00000000001005a0                i686_ISR128
+                0x00000000001005ac                i686_ISR129
+                0x00000000001005b8                i686_ISR130
+                0x00000000001005c4                i686_ISR131
+                0x00000000001005d0                i686_ISR132
+                0x00000000001005dc                i686_ISR133
+                0x00000000001005e8                i686_ISR134
+                0x00000000001005f4                i686_ISR135
+                0x0000000000100600                i686_ISR136
+                0x000000000010060c                i686_ISR137
+                0x0000000000100618                i686_ISR138
+                0x0000000000100624                i686_ISR139
+                0x0000000000100630                i686_ISR140
+                0x000000000010063c                i686_ISR141
+                0x0000000000100648                i686_ISR142
+                0x0000000000100654                i686_ISR143
+                0x0000000000100660                i686_ISR144
+                0x000000000010066c                i686_ISR145
+                0x0000000000100678                i686_ISR146
+                0x0000000000100684                i686_ISR147
+                0x0000000000100690                i686_ISR148
+                0x000000000010069c                i686_ISR149
+                0x00000000001006a8                i686_ISR150
+                0x00000000001006b4                i686_ISR151
+                0x00000000001006c0                i686_ISR152
+                0x00000000001006cc                i686_ISR153
+                0x00000000001006d8                i686_ISR154
+                0x00000000001006e4                i686_ISR155
+                0x00000000001006f0                i686_ISR156
+                0x00000000001006fc                i686_ISR157
+                0x0000000000100708                i686_ISR158
+                0x0000000000100714                i686_ISR159
+                0x0000000000100720                i686_ISR160
+                0x000000000010072c                i686_ISR161
+                0x0000000000100738                i686_ISR162
+                0x0000000000100744                i686_ISR163
+                0x0000000000100750                i686_ISR164
+                0x000000000010075c                i686_ISR165
+                0x0000000000100768                i686_ISR166
+                0x0000000000100774                i686_ISR167
+                0x0000000000100780                i686_ISR168
+                0x000000000010078c                i686_ISR169
+                0x0000000000100798                i686_ISR170
+                0x00000000001007a4                i686_ISR171
+                0x00000000001007b0                i686_ISR172
+                0x00000000001007bc                i686_ISR173
+                0x00000000001007c8                i686_ISR174
+                0x00000000001007d4                i686_ISR175
+                0x00000000001007e0                i686_ISR176
+                0x00000000001007ec                i686_ISR177
+                0x00000000001007f8                i686_ISR178
+                0x0000000000100804                i686_ISR179
+                0x0000000000100810                i686_ISR180
+                0x000000000010081c                i686_ISR181
+                0x0000000000100828                i686_ISR182
+                0x0000000000100834                i686_ISR183
+                0x0000000000100840                i686_ISR184
+                0x000000000010084c                i686_ISR185
+                0x0000000000100858                i686_ISR186
+                0x0000000000100864                i686_ISR187
+                0x0000000000100870                i686_ISR188
+                0x000000000010087c                i686_ISR189
+                0x0000000000100888                i686_ISR190
+                0x0000000000100894                i686_ISR191
+                0x00000000001008a0                i686_ISR192
+                0x00000000001008ac                i686_ISR193
+                0x00000000001008b8                i686_ISR194
+                0x00000000001008c4                i686_ISR195
+                0x00000000001008d0                i686_ISR196
+                0x00000000001008dc                i686_ISR197
+                0x00000000001008e8                i686_ISR198
+                0x00000000001008f4                i686_ISR199
+                0x0000000000100900                i686_ISR200
+                0x000000000010090c                i686_ISR201
+                0x0000000000100918                i686_ISR202
+                0x0000000000100924                i686_ISR203
+                0x0000000000100930                i686_ISR204
+                0x000000000010093c                i686_ISR205
+                0x0000000000100948                i686_ISR206
+                0x0000000000100954                i686_ISR207
+                0x0000000000100960                i686_ISR208
+                0x000000000010096c                i686_ISR209
+                0x0000000000100978                i686_ISR210
+                0x0000000000100984                i686_ISR211
+                0x0000000000100990                i686_ISR212
+                0x000000000010099c                i686_ISR213
+                0x00000000001009a8                i686_ISR214
+                0x00000000001009b4                i686_ISR215
+                0x00000000001009c0                i686_ISR216
+                0x00000000001009cc                i686_ISR217
+                0x00000000001009d8                i686_ISR218
+                0x00000000001009e4                i686_ISR219
+                0x00000000001009f0                i686_ISR220
+                0x00000000001009fc                i686_ISR221
+                0x0000000000100a08                i686_ISR222
+                0x0000000000100a14                i686_ISR223
+                0x0000000000100a20                i686_ISR224
+                0x0000000000100a2c                i686_ISR225
+                0x0000000000100a38                i686_ISR226
+                0x0000000000100a44                i686_ISR227
+                0x0000000000100a50                i686_ISR228
+                0x0000000000100a5c                i686_ISR229
+                0x0000000000100a68                i686_ISR230
+                0x0000000000100a74                i686_ISR231
+                0x0000000000100a80                i686_ISR232
+                0x0000000000100a8c                i686_ISR233
+                0x0000000000100a98                i686_ISR234
+                0x0000000000100aa4                i686_ISR235
+                0x0000000000100ab0                i686_ISR236
+                0x0000000000100abc                i686_ISR237
+                0x0000000000100ac8                i686_ISR238
+                0x0000000000100ad4                i686_ISR239
+                0x0000000000100ae0                i686_ISR240
+                0x0000000000100aec                i686_ISR241
+                0x0000000000100af5                i686_ISR242
+                0x0000000000100afe                i686_ISR243
+                0x0000000000100b07                i686_ISR244
+                0x0000000000100b10                i686_ISR245
+                0x0000000000100b19                i686_ISR246
+                0x0000000000100b22                i686_ISR247
+                0x0000000000100b2b                i686_ISR248
+                0x0000000000100b34                i686_ISR249
+                0x0000000000100b3d                i686_ISR250
+                0x0000000000100b46                i686_ISR251
+                0x0000000000100b4f                i686_ISR252
+                0x0000000000100b58                i686_ISR253
+                0x0000000000100b61                i686_ISR254
+                0x0000000000100b6a                i686_ISR255
+ .text          0x0000000000100b9d       0x71 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/debug.obj
+                0x0000000000100b9d                logf
+ .text          0x0000000000100c0e      0x85a /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/main.obj
+                0x0000000000100c0e                readStr
+                0x000000000010144f                timer
+ .text          0x0000000000101468       0xf5 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/memory.obj
+                0x0000000000101468                memcpy
+                0x00000000001014ba                memset
+                0x00000000001014fd                memcmp
+ .text          0x000000000010155d      0x9dc /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/stdio.obj
+                0x000000000010155d                clearLine
+                0x00000000001015d3                updateCursor
+                0x0000000000101644                clearScreen
+                0x000000000010167c                scrollUp
+                0x0000000000101766                newLineCheck
+                0x0000000000101790                printch
+                0x0000000000101903                fputc
+                0x0000000000101926                fputs
+                0x0000000000101958                fprintf_unsigned
+                0x0000000000101a03                fprintf_signed
+                0x0000000000101a63                vfprintf
+                0x0000000000101d7e                fprintf
+                0x0000000000101da2                fprint_buffer
+                0x0000000000101e47                putc
+                0x0000000000101e68                puts
+                0x0000000000101e81                printf
+                0x0000000000101ea4                print_buffer
+                0x0000000000101ec0                debugc
+                0x0000000000101ee1                debugs
+                0x0000000000101efa                debugf
+                0x0000000000101f1d                debug_buffer
+ .text          0x0000000000101f39      0x15d /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/string.obj
+                0x0000000000101f39                strlength
+                0x0000000000101f6b                strEql
+                0x0000000000101fe0                strchr
+                0x000000000010201e                strcpy
+                0x0000000000102070                strlen
+ .text          0x0000000000102096       0x3c /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/sys.obj
+                0x0000000000102096                inportb
+                0x00000000001020b3                outportb
+ .text          0x00000000001020d2       0x22 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/hal.obj
+                0x00000000001020d2                HAL_Initialize
+ .text          0x00000000001020f4       0xa5 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/vfs.obj
+                0x00000000001020f4                VFS_Write
+ .text          0x0000000000102199       0x27 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/e9.obj
+                0x0000000000102199                e9_putc
+ .text          0x00000000001021c0       0x1d /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/gdt.obj
+                0x00000000001021c0                i686_GDT_Initialize
+ .text          0x00000000001021dd      0x320 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/i8259.obj
+                0x00000000001021dd                i8259_SetMask
+                0x0000000000102238                i8259_GetMask
+                0x000000000010226c                i8259_Configure
+                0x000000000010236d                i8259_SendEndOfInterrupt
+                0x000000000010239d                i8259_Disable
+                0x00000000001023b6                i8259_Mask
+                0x00000000001023e7                i8259_Unmask
+                0x000000000010241a                i8259_ReadIrqRequestRegister
+                0x0000000000102472                i8259_ReadInServiceRegister
+                0x00000000001024ca                i8259_Probe
+                0x00000000001024f3                i8259_GetDriver
+ .text          0x00000000001024fd       0xba /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/idt.obj
+                0x00000000001024fd                i686_IDT_SetGate
+                0x000000000010255e                i686_IDT_EnableGate
+                0x000000000010257e                i686_IDT_DisableGate
+                0x000000000010259e                i686_IDT_Initialize
+ .text          0x00000000001025b7       0x1b /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/io.obj
+                0x00000000001025b7                i686_iowait
+ .text          0x00000000001025d2      0x139 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/irq.obj
+                0x00000000001025d2                i686_IRQ_Handler
+                0x0000000000102636                i686_IRQ_Initialize
+                0x00000000001026f8                i686_IRQ_RegisterHandler
+ .text          0x000000000010270b      0x1db /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isr.obj
+                0x000000000010270b                i686_ISR_Initialize
+                0x000000000010274d                i686_ISR_Handler
+                0x00000000001028c2                i686_ISR_RegisterHandler
+ .text          0x00000000001028e6     0x1489 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isrs_gen.obj
+                0x00000000001028e6                i686_ISR_InitializeGates
+ .text          0x0000000000103d6f      0x3a5 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/vga_text.obj
+                0x0000000000103d6f                VGA_putchr
+                0x0000000000103d9e                VGA_putcolor
+                0x0000000000103dd0                VGA_getchr
+                0x0000000000103df2                VGA_getcolor
+                0x0000000000103e17                VGA_setcursor
+                0x0000000000103e88                VGA_clrscr
+                0x0000000000103f16                VGA_scrollback
+                0x0000000000104004                VGA_putc
+ *fill*         0x0000000000104114        0xc 
+ .text          0x0000000000104120      0x11a /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_udivdi3.o)
+                0x0000000000104120                __udivdi3
+ *fill*         0x000000000010423a        0x6 
+ .text          0x0000000000104240      0x136 /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_umoddi3.o)
+                0x0000000000104240                __umoddi3
+
+.data           0x0000000000104378       0x2c
+                0x0000000000104378                __data_start = .
+ *(.data)
+ .data          0x0000000000104378        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/debug.obj
+ .data          0x0000000000104378        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/main.obj
+ .data          0x0000000000104378        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/memory.obj
+ .data          0x0000000000104378        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/stdio.obj
+ .data          0x0000000000104378        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/string.obj
+ .data          0x0000000000104378        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/sys.obj
+ .data          0x0000000000104378        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/hal.obj
+ .data          0x0000000000104378        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/vfs.obj
+ .data          0x0000000000104378        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/e9.obj
+ .data          0x0000000000104378       0x1e /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/gdt.obj
+                0x0000000000104378                g_GDT
+                0x0000000000104390                g_GDTDescriptor
+ .data          0x0000000000104396        0x2 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/i8259.obj
+ .data          0x0000000000104398        0x6 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/idt.obj
+                0x0000000000104398                g_IDTDescriptor
+ .data          0x000000000010439e        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/io.obj
+ .data          0x000000000010439e        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/irq.obj
+ .data          0x000000000010439e        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isr.obj
+ .data          0x000000000010439e        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isrs_gen.obj
+ *fill*         0x000000000010439e        0x2 
+ .data          0x00000000001043a0        0x4 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/vga_text.obj
+                0x00000000001043a0                g_ScreenBuffer
+ .data          0x00000000001043a4        0x0 /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .data          0x00000000001043a4        0x0 /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_umoddi3.o)
+
+.rodata         0x00000000001043c0      0x619
+                0x00000000001043c0                __rodata_start = .
+ *(.rodata)
+ .rodata        0x00000000001043c0       0x52 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/debug.obj
+ *fill*         0x0000000000104412        0x2 
+ .rodata        0x0000000000104414      0x158 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/main.obj
+ .rodata        0x000000000010456c       0xb2 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/stdio.obj
+                0x000000000010456c                sw
+                0x000000000010456d                sh
+                0x000000000010456e                sd
+                0x0000000000104570                g_HexChars
+ *fill*         0x000000000010461e        0x2 
+ .rodata        0x0000000000104620       0x28 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/i8259.obj
+ .rodata        0x0000000000104648       0x34 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/irq.obj
+ *fill*         0x000000000010467c        0x4 
+ .rodata        0x0000000000104680      0x350 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isr.obj
+ .rodata        0x00000000001049d0        0x9 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/vga_text.obj
+                0x00000000001049d0                SCREEN_WIDTH
+                0x00000000001049d4                SCREEN_HEIGHT
+                0x00000000001049d8                DEFAULT_COLOR
+
+.eh_frame       0x00000000001049dc       0xd8
+ .eh_frame      0x00000000001049dc       0x64 /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .eh_frame      0x0000000000104a40       0x74 /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_umoddi3.o)
+
+.bss            0x0000000000104ac0      0xc88
+                0x0000000000104ac0                __bss_start = .
+ *(.bss)
+ .bss           0x0000000000104ac0        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/debug.obj
+ .bss           0x0000000000104ac0        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/main.obj
+ .bss           0x0000000000104ac0        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/memory.obj
+ .bss           0x0000000000104ac0        0x8 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/stdio.obj
+                0x0000000000104ac0                cursorX
+                0x0000000000104ac4                cursorY
+ .bss           0x0000000000104ac8        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/string.obj
+ .bss           0x0000000000104ac8        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/sys.obj
+ .bss           0x0000000000104ac8        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/hal.obj
+ .bss           0x0000000000104ac8        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/vfs.obj
+ .bss           0x0000000000104ac8        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/e9.obj
+ .bss           0x0000000000104ac8        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/gdt.obj
+ .bss           0x0000000000104ac8        0xd /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/i8259.obj
+                0x0000000000104ac8                PIC_ICW1
+                0x0000000000104acc                PIC_ICW4
+                0x0000000000104ad0                PIC_CMD
+ *fill*         0x0000000000104ad5        0xb 
+ .bss           0x0000000000104ae0      0x800 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/idt.obj
+                0x0000000000104ae0                g_IDT
+ .bss           0x00000000001052e0        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/io.obj
+ .bss           0x00000000001052e0       0x44 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/irq.obj
+                0x00000000001052e0                g_IRQHandlers
+ *fill*         0x0000000000105324       0x1c 
+ .bss           0x0000000000105340      0x400 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isr.obj
+                0x0000000000105340                g_ISRHandlers
+ .bss           0x0000000000105740        0x0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isrs_gen.obj
+ .bss           0x0000000000105740        0x8 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/vga_text.obj
+                0x0000000000105740                g_ScreenX
+                0x0000000000105744                g_ScreenY
+ .bss           0x0000000000105748        0x0 /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .bss           0x0000000000105748        0x0 /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_umoddi3.o)
+                0x0000000000105748                __end = .
+OUTPUT(/mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel.bin binary)
+
+.debug_info     0x0000000000000000     0x3917
+ .debug_info    0x0000000000000000      0x1c7 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/debug.obj
+ .debug_info    0x00000000000001c7      0x2ee /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/main.obj
+ .debug_info    0x00000000000004b5      0x1e8 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/memory.obj
+ .debug_info    0x000000000000069d      0x6c5 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/stdio.obj
+ .debug_info    0x0000000000000d62      0x1ed /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/string.obj
+ .debug_info    0x0000000000000f4f       0xf0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/sys.obj
+ .debug_info    0x000000000000103f       0xc0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/hal.obj
+ .debug_info    0x00000000000010ff      0x130 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/vfs.obj
+ .debug_info    0x000000000000122f       0xc5 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/e9.obj
+ .debug_info    0x00000000000012f4      0x1fa /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/gdt.obj
+ .debug_info    0x00000000000014ee      0x3bd /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/i8259.obj
+ .debug_info    0x00000000000018ab      0x24e /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/idt.obj
+ .debug_info    0x0000000000001af9       0xac /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/io.obj
+ .debug_info    0x0000000000001ba5      0x3ea /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/irq.obj
+ .debug_info    0x0000000000001f8f      0x2f1 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isr.obj
+ .debug_info    0x0000000000002280      0xd09 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isrs_gen.obj
+ .debug_info    0x0000000000002f89      0x323 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/vga_text.obj
+ .debug_info    0x00000000000032ac      0x326 /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .debug_info    0x00000000000035d2      0x345 /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_umoddi3.o)
+
+.debug_abbrev   0x0000000000000000     0x1497
+ .debug_abbrev  0x0000000000000000       0xf4 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/debug.obj
+ .debug_abbrev  0x00000000000000f4      0x16a /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/main.obj
+ .debug_abbrev  0x000000000000025e       0xe2 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/memory.obj
+ .debug_abbrev  0x0000000000000340      0x20c /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/stdio.obj
+ .debug_abbrev  0x000000000000054c       0xe0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/string.obj
+ .debug_abbrev  0x000000000000062c       0x93 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/sys.obj
+ .debug_abbrev  0x00000000000006bf       0x5a /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/hal.obj
+ .debug_abbrev  0x0000000000000719       0xb6 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/vfs.obj
+ .debug_abbrev  0x00000000000007cf       0x82 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/e9.obj
+ .debug_abbrev  0x0000000000000851       0xf0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/gdt.obj
+ .debug_abbrev  0x0000000000000941      0x1ba /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/i8259.obj
+ .debug_abbrev  0x0000000000000afb      0x122 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/idt.obj
+ .debug_abbrev  0x0000000000000c1d       0x6d /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/io.obj
+ .debug_abbrev  0x0000000000000c8a      0x1b6 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/irq.obj
+ .debug_abbrev  0x0000000000000e40      0x16c /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isr.obj
+ .debug_abbrev  0x0000000000000fac       0xbf /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isrs_gen.obj
+ .debug_abbrev  0x000000000000106b      0x14c /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/vga_text.obj
+ .debug_abbrev  0x00000000000011b7      0x165 /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .debug_abbrev  0x000000000000131c      0x17b /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_umoddi3.o)
+
+.debug_aranges  0x0000000000000000      0x268
+ .debug_aranges
+                0x0000000000000000       0x20 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/debug.obj
+ .debug_aranges
+                0x0000000000000020       0x28 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/main.obj
+ .debug_aranges
+                0x0000000000000048       0x20 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/memory.obj
+ .debug_aranges
+                0x0000000000000068       0x20 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/stdio.obj
+ .debug_aranges
+                0x0000000000000088       0x20 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/string.obj
+ .debug_aranges
+                0x00000000000000a8       0x20 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/sys.obj
+ .debug_aranges
+                0x00000000000000c8       0x20 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/hal.obj
+ .debug_aranges
+                0x00000000000000e8       0x20 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/vfs.obj
+ .debug_aranges
+                0x0000000000000108       0x20 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/e9.obj
+ .debug_aranges
+                0x0000000000000128       0x20 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/gdt.obj
+ .debug_aranges
+                0x0000000000000148       0x20 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/i8259.obj
+ .debug_aranges
+                0x0000000000000168       0x20 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/idt.obj
+ .debug_aranges
+                0x0000000000000188       0x20 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/io.obj
+ .debug_aranges
+                0x00000000000001a8       0x20 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/irq.obj
+ .debug_aranges
+                0x00000000000001c8       0x20 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isr.obj
+ .debug_aranges
+                0x00000000000001e8       0x20 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isrs_gen.obj
+ .debug_aranges
+                0x0000000000000208       0x20 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/vga_text.obj
+ .debug_aranges
+                0x0000000000000228       0x20 /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .debug_aranges
+                0x0000000000000248       0x20 /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_umoddi3.o)
+
+.debug_line     0x0000000000000000     0x17bc
+ .debug_line    0x0000000000000000       0x7a /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/debug.obj
+ .debug_line    0x000000000000007a      0x386 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/main.obj
+ .debug_line    0x0000000000000400       0xe8 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/memory.obj
+ .debug_line    0x00000000000004e8      0x40c /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/stdio.obj
+ .debug_line    0x00000000000008f4       0xfc /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/string.obj
+ .debug_line    0x00000000000009f0       0x5b /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/sys.obj
+ .debug_line    0x0000000000000a4b       0x70 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/hal.obj
+ .debug_line    0x0000000000000abb       0xc0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/vfs.obj
+ .debug_line    0x0000000000000b7b       0x62 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/e9.obj
+ .debug_line    0x0000000000000bdd       0x5c /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/gdt.obj
+ .debug_line    0x0000000000000c39      0x11f /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/i8259.obj
+ .debug_line    0x0000000000000d58       0x89 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/idt.obj
+ .debug_line    0x0000000000000de1       0x5e /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/io.obj
+ .debug_line    0x0000000000000e3f      0x100 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/irq.obj
+ .debug_line    0x0000000000000f3f       0xdf /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isr.obj
+ .debug_line    0x000000000000101e      0x25f /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isrs_gen.obj
+ .debug_line    0x000000000000127d      0x1f8 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/vga_text.obj
+ .debug_line    0x0000000000001475      0x179 /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .debug_line    0x00000000000015ee      0x1ce /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_umoddi3.o)
+
+.debug_str      0x0000000000000000     0x2d9e
+ .debug_str     0x0000000000000000      0x195 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/debug.obj
+ .debug_str     0x0000000000000195      0x1b2 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/main.obj
+ .debug_str     0x0000000000000347      0x125 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/memory.obj
+ .debug_str     0x000000000000046c      0x2a5 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/stdio.obj
+ .debug_str     0x0000000000000711      0x122 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/string.obj
+ .debug_str     0x0000000000000833       0xfe /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/sys.obj
+ .debug_str     0x0000000000000931      0x139 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/hal.obj
+ .debug_str     0x0000000000000a6a      0x112 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/vfs.obj
+ .debug_str     0x0000000000000b7c       0xf7 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/e9.obj
+ .debug_str     0x0000000000000c73      0x2fa /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/gdt.obj
+ .debug_str     0x0000000000000f6d      0x373 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/i8259.obj
+ .debug_str     0x00000000000012e0      0x291 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/idt.obj
+ .debug_str     0x0000000000001571       0xf6 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/io.obj
+ .debug_str     0x0000000000001667      0x25d /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/irq.obj
+ .debug_str     0x00000000000018c4      0x20e /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isr.obj
+ .debug_str     0x0000000000001ad2      0xd5e /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isrs_gen.obj
+ .debug_str     0x0000000000002830      0x1a8 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/vga_text.obj
+ .debug_str     0x00000000000029d8      0x1e3 /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .debug_str     0x0000000000002bbb      0x1e3 /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_umoddi3.o)
+
+.debug_line_str
+                0x0000000000000000     0x1144
+ .debug_line_str
+                0x0000000000000000       0xf7 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/debug.obj
+ .debug_line_str
+                0x00000000000000f7      0x11f /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/main.obj
+ .debug_line_str
+                0x0000000000000216       0xe0 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/memory.obj
+ .debug_line_str
+                0x00000000000002f6      0x105 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/stdio.obj
+ .debug_line_str
+                0x00000000000003fb       0xa5 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/string.obj
+ .debug_line_str
+                0x00000000000004a0       0x9c /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/sys.obj
+ .debug_line_str
+                0x000000000000053c       0xcb /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/hal.obj
+ .debug_line_str
+                0x0000000000000607      0x10a /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/vfs.obj
+ .debug_line_str
+                0x0000000000000711       0xf9 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/e9.obj
+ .debug_line_str
+                0x000000000000080a       0xeb /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/gdt.obj
+ .debug_line_str
+                0x00000000000008f5       0xfc /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/i8259.obj
+ .debug_line_str
+                0x00000000000009f1       0xf1 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/idt.obj
+ .debug_line_str
+                0x0000000000000ae2       0xed /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/io.obj
+ .debug_line_str
+                0x0000000000000bcf      0x114 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/irq.obj
+ .debug_line_str
+                0x0000000000000ce3      0x10e /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isr.obj
+ .debug_line_str
+                0x0000000000000df1      0x100 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isrs_gen.obj
+ .debug_line_str
+                0x0000000000000ef1      0x10b /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/vga_text.obj
+ .debug_line_str
+                0x0000000000000ffc       0xa4 /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .debug_line_str
+                0x00000000000010a0       0xa4 /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_umoddi3.o)
+
+.comment        0x0000000000000000      0x169
+ .comment       0x0000000000000000       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/debug.obj
+ .comment       0x0000000000000013       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/main.obj
+ .comment       0x0000000000000026       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/memory.obj
+ .comment       0x0000000000000039       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/stdio.obj
+ .comment       0x000000000000004c       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/string.obj
+ .comment       0x000000000000005f       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/sys.obj
+ .comment       0x0000000000000072       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/hal.obj
+ .comment       0x0000000000000085       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/vfs.obj
+ .comment       0x0000000000000098       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/e9.obj
+ .comment       0x00000000000000ab       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/gdt.obj
+ .comment       0x00000000000000be       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/i8259.obj
+ .comment       0x00000000000000d1       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/idt.obj
+ .comment       0x00000000000000e4       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/io.obj
+ .comment       0x00000000000000f7       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/irq.obj
+ .comment       0x000000000000010a       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isr.obj
+ .comment       0x000000000000011d       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isrs_gen.obj
+ .comment       0x0000000000000130       0x13 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/vga_text.obj
+ .comment       0x0000000000000143       0x13 /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .comment       0x0000000000000156       0x13 /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_umoddi3.o)
+
+.debug_frame    0x0000000000000000      0xa2c
+ .debug_frame   0x0000000000000000       0x34 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/debug.obj
+ .debug_frame   0x0000000000000034       0x6c /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/main.obj
+ .debug_frame   0x00000000000000a0       0x74 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/memory.obj
+ .debug_frame   0x0000000000000114      0x2b8 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/stdio.obj
+ .debug_frame   0x00000000000003cc       0xb8 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/string.obj
+ .debug_frame   0x0000000000000484       0x54 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/sys.obj
+ .debug_frame   0x00000000000004d8       0x34 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/hal.obj
+ .debug_frame   0x000000000000050c       0x34 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/hal/vfs.obj
+ .debug_frame   0x0000000000000540       0x34 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/e9.obj
+ .debug_frame   0x0000000000000574       0x34 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/gdt.obj
+ .debug_frame   0x00000000000005a8      0x180 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/i8259.obj
+ .debug_frame   0x0000000000000728       0x94 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/idt.obj
+ .debug_frame   0x00000000000007bc       0x34 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/io.obj
+ .debug_frame   0x00000000000007f0       0x74 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/irq.obj
+ .debug_frame   0x0000000000000864       0x80 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isr.obj
+ .debug_frame   0x00000000000008e4       0x34 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/isrs_gen.obj
+ .debug_frame   0x0000000000000918      0x114 /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/arch/i686/vga_text.obj
+
+.debug_rnglists
+                0x0000000000000000       0x64
+ .debug_rnglists
+                0x0000000000000000       0x1b /mnt/c/Users/User/Desktop/orzen-dos/buildenv/somelogs/build/kernel/c/main.obj
+ .debug_rnglists
+                0x000000000000001b       0x2a /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .debug_rnglists
+                0x0000000000000045       0x1f /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_umoddi3.o)
+
+.debug_loclists
+                0x0000000000000000      0x7be
+ .debug_loclists
+                0x0000000000000000      0x40a /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_udivdi3.o)
+ .debug_loclists
+                0x000000000000040a      0x3b4 /usr/local/i386elfgcc/lib/gcc/i686-elf/12.2.0/libgcc.a(_umoddi3.o)
